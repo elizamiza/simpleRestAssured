@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CukesRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="DEV014" time="0.0">
+  <properties/>
+  <system-out><![CDATA[16:51:17.896 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8080
+16:51:17.896 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
+16:51:17.899 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:51:17.899 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:51:17.899 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:51:17.899 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:51:17.899 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:51:17.899 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /greeting?name=Eliza%20Mae HTTP/1.1
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "GET /greeting?name=Eliza%20Mae HTTP/1.1[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:8080[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_112)[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> GET /greeting?name=Eliza%20Mae HTTP/1.1
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:8080
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_112)
+16:51:17.900 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:51:17.903 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+16:51:17.903 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:51:17.903 [Test worker] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:51:17.903 [Test worker] DEBUG org.apache.http.wire -  << "Date: Wed, 21 Dec 2016 21:51:17 GMT[\r][\n]"
+16:51:17.903 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:17.903 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+16:51:17.903 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+16:51:17.903 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:51:17.903 [Test worker] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:51:17.903 [Test worker] DEBUG org.apache.http.headers - << Date: Wed, 21 Dec 2016 21:51:17 GMT
+16:51:17.903 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:51:17.904 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:51:17.904 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:51:17.910 [Test worker] DEBUG org.apache.http.wire -  << "25[\r][\n]"
+16:51:17.910 [Test worker] DEBUG org.apache.http.wire -  << "{"id":8,"content":"Hello Eliza Mae!"}"
+16:51:17.910 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:17.911 [Test worker] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:51:17.911 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:17.911 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5bafd390
+16:51:17.911 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+16:51:18.239 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8080
+16:51:18.239 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
+16:51:18.240 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:51:18.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:51:18.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:51:18.241 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:51:18.241 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:51:18.241 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /greeting?name=bubblebutt HTTP/1.1
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "GET /greeting?name=bubblebutt HTTP/1.1[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:8080[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_112)[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:51:18.241 [Test worker] DEBUG org.apache.http.headers - >> GET /greeting?name=bubblebutt HTTP/1.1
+16:51:18.241 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+16:51:18.241 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+16:51:18.241 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:8080
+16:51:18.242 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:51:18.242 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_112)
+16:51:18.242 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:51:18.245 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+16:51:18.245 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:51:18.245 [Test worker] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:51:18.245 [Test worker] DEBUG org.apache.http.wire -  << "Date: Wed, 21 Dec 2016 21:51:17 GMT[\r][\n]"
+16:51:18.245 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:18.245 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+16:51:18.245 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+16:51:18.245 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:51:18.245 [Test worker] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:51:18.245 [Test worker] DEBUG org.apache.http.headers - << Date: Wed, 21 Dec 2016 21:51:17 GMT
+16:51:18.246 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:51:18.246 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:51:18.246 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+16:51:18.246 [Test worker] DEBUG org.apache.http.wire -  << "26[\r][\n]"
+16:51:18.246 [Test worker] DEBUG org.apache.http.wire -  << "{"id":9,"content":"Hello bubblebutt!"}"
+16:51:18.246 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:18.246 [Test worker] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+16:51:18.247 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:18.247 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@e2f4bbf
+16:51:18.247 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+
+1 Scenarios (?[32m1 passed?[0m)
+3 Steps (?[32m3 passed?[0m)
+0m1.531s
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

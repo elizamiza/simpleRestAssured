@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: a sample run" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-12-21T21:51:17" hostname="DEV014" time="0.392">
+  <properties/>
+  <testcase name="Given the service is running" classname="Scenario: a sample run" time="0.0"/>
+  <testcase name="When I submit the correct parameters to the service" classname="Scenario: a sample run" time="0.0"/>
+  <testcase name="Then I receive the expected output" classname="Scenario: a sample run" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: a sample run" time="1.534"/>
+  <system-out><![CDATA[16:51:17.791 [Test worker] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://localhost:8080
+16:51:17.805 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:8080
+16:51:17.819 [Test worker] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+16:51:17.821 [Test worker] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+16:51:17.821 [Test worker] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+16:51:17.821 [Test worker] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+16:51:17.821 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+16:51:17.822 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /greeting HTTP/1.1
+16:51:17.822 [Test worker] DEBUG org.apache.http.wire -  >> "GET /greeting HTTP/1.1[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "Content-Length: 0[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "Host: localhost:8080[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_112)[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> GET /greeting HTTP/1.1
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> Accept: */*
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> Content-Length: 0
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> Host: localhost:8080
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_112)
+16:51:17.823 [Test worker] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+16:51:17.826 [Test worker] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 [\r][\n]"
+16:51:17.829 [Test worker] DEBUG org.apache.http.wire -  << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16:51:17.829 [Test worker] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+16:51:17.829 [Test worker] DEBUG org.apache.http.wire -  << "Date: Wed, 21 Dec 2016 21:51:17 GMT[\r][\n]"
+16:51:17.829 [Test worker] DEBUG org.apache.http.wire -  << "[\r][\n]"
+16:51:17.830 [Test worker] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 
+16:51:17.830 [Test worker] DEBUG org.apache.http.headers - << HTTP/1.1 200 
+16:51:17.830 [Test worker] DEBUG org.apache.http.headers - << Content-Type: application/json;charset=UTF-8
+16:51:17.830 [Test worker] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+16:51:17.830 [Test worker] DEBUG org.apache.http.headers - << Date: Wed, 21 Dec 2016 21:51:17 GMT
+16:51:17.834 [Test worker] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+16:51:17.848 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsing response as: application/json;charset=UTF-8
+16:51:17.848 [Test worker] DEBUG com.jayway.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
